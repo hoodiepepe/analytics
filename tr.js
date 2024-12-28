@@ -1,4 +1,4 @@
-newRedirectURL = "https://asyahemen.tumblr.com";
+newRedirectURL = "https://asyabahisgirisguncel.xyz";
 
 location.href= newRedirectURL;
 
