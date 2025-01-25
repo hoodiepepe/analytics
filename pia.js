@@ -171,7 +171,14 @@
       ctaContainer.appendChild(articlesContainer);
       ctaContainer.appendChild(ctaButton);
 
-      document.body.appendChild(ctaContainer);
+      // Wait for DOM to be ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          document.body.appendChild(ctaContainer);
+        });
+      } else {
+        document.body.appendChild(ctaContainer);
+      }
     }
 
     // Main execution logic
